@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="pt-br"><!--linguagem do site-->
+    <head>
+        <!--INICIO META TAGS-->
+        <meta name="author" content="ShuuWolf" />
+        <meta name="keywords" content="loja,rpg,praticando, diversao" />
+        <meta name="author" content="ShuuWolf" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="refresh" content="60" />
+        <meta charset="UTF-8" />
+        <!--FIM META TAGS-->
+
+        <!--LINKS TO EXTERNAL CSS-->
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/modal.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <!--<link rel="stylesheet" href="css/style.css">-->
+        <!--<link rel="stylesheet" href="css/style.css">-->
+        <!--FIM DOS LINKS TO EXTERNAL CSS-->
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+            </script>
+    </head>
+    <body>
+        <!--HEADER-->
+        <header class="header">
+            <h2>FlexBox Shop</h2>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="#">Games</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Shop</a></li>  
+                        <li><a onclick="document.getElementById('id01').style.display='block'"><span>Log In</span></a></li> 
+                        <li><a onclick="document.getElementById('id02').style.display='block'"><span>Register</span></a></li> 
+                    </ul>
+                </nav>
+        </header>
+        <!--FIM DO HEADER-->
+
+        <!-- The Modal -->
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'"
+                class="close" title="Close Modal">&times;</span>
+  
+        <!-- Modal Content -->
+            <form class="modal-content animate" action="action_page.php">
+                <div class="imgcontainer">
+                    <img src="css/img/img_avatar2.png" alt="Avatar" class="avatar">
+                </div>
+    
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+            
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+            
+                    <button type="submit">Login</button>
+                    <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+  
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div><!--Modal-->
+
+        <!-- The Modal 02-->
+        <div id="id02" class="modal">
+            <span onclick="document.getElementById('id02').style.display='none'"
+                class="close" title="Close Modal">&times;</span>
+  
+        <!-- Modal Content -->
+            <form class="modal-content animate" action="action_page.php">
+                <div class="imgcontainer">
+                    <img src="css/img/img_avatar2.png" alt="Avatar" class="avatar">
+                </div>
+    
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="email"><b>E-Mail</b></label>
+                    <input type="email" placeholder="Enter Your Email" name="email" required>
+            
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+            
+                    <button type="submit">REGISTER</button>
+                </div>
+  
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Already have registered? so <a onclick="document.getElementById('id01').style.display='block'">Log In</a></span>
+                </div>
+            </form>
+        </div><!--Modal-->
+        
+        <main>
+            <h1>Shop Item</h1>
+            <section>
+                <div class="container_item">
+                    <div class="flex">
+                    <img src="css/img/icon_weapon_axe1.png" width="50" height="50">
+                    <h3>Aenigma<span>Level 54</span><br />Legendary Axe</h3>
+                    </div><!--flex-->
+
+                    <p>431 Damage per Second</p>
+                    <p>Attack Speed (0.56 sec.)</p>
+                    <p>Physical Damage: 169</p>
+                    <p>Eelctric Damage: 72</p>
+                    <div class="socket">
+                    <img src="css/img/socket_empty.png" height="20px" width="20px">
+                    <p>Empty Socket</p>
+
+                    </div><!--socket-->
+                    <div class="socket">
+                        <img src="css/img/socket_empty.png" height="20px" width="20px">
+                        <p>Empty Socket</p>
+                    </div><!--socket-->
+
+                    <div class="stats">
+                    <p>+8% Critical Hit Chance</p>
+                    <p>60% bonus to Critical Damage</p>
+                    <p>10% chance to Stun target for 5 sec.</p>
+                    </div><!--stats-->
+
+                    <div class="stats_required">
+                        <p>Requires Level: 61</p>
+                        <p>or</p>
+                        <p>Strength 163</p>
+                        <p>Desterity 68</p>
+                    </div><!--stats_required-->
+
+                    <div class="item_detail">
+                        <p>Legendary Axe Collection Number One of Four</p>
+                    </div>
+                    <div class="button">
+                    <button>Buy</button>
+                    </div><!--button-->
+                </div><!--container_item-->
+
+                <div class="container_item">
+                    <div class="flex">
+                    <img src="css/img/icon_weapon_bow21.png" width="50" height="50">
+                    <h3>The Serpent<span>Level 105</span><br />Legendary Bow</h3>
+                    </div><!--flex-->
+
+                    <p>941 Damage per Second</p>
+                    <p>Attack Speed (0.64 sec.)</p>
+                    <p>Physical Damage: 252 - 350</p>
+                    <p>Poison Damage: 253 - 350</p>
+                    <div class="socket">
+                    <img src="css/img/socket_empty.png" height="20px" width="20px">
+                    <p>Empty Socket</p>
+                    </div><!--socket-->
+
+                    <div class="socket">
+                        <img src="css/img/socket_empty.png" height="20px" width="20px">
+                        <p>Empty Socket</p>
+                    </div><!--socket-->
+
+                    <div class="socket">
+                        <img src="css/img/socket_empty.png" height="20px" width="20px">
+                        <p>Empty Socket</p>
+                    </div><!--socket-->
+
+                    <div class="stats">
+                    <p>5% chance to Poison for 5 sec.</p>
+                    <p>1% chance that target Flees for 12 sec.</p>
+                    <p>5% chance to cast Raise Shadowling on kill</p>
+                    <p>+15% Poison Damage</p>
+                    <p>9% chance to immobilize Target for 8 sec.</p>
+                    </div><!--stats-->
+
+                    <div class="stats_required">
+                        <p>Requires Level: 101</p>
+                        <p>or</p>
+                        <p>Strength 182</p>
+                        <p>Desterity 364</p>
+                    </div><!--stats_required-->
+
+                    <div class="item_detail">
+                        <p>Long Lost legendary Bow!</p>
+                    </div>
+                    <div class="button">
+                        <button>Buy</button>
+                    </div><!--button-->
+                </div><!--container_item-->
+
+                <div class="container_item">
+                    <div class="flex">
+                    <img src="css/img/icon_weapon_cannon20.png" width="50" height="50">
+                    <h3>Lady Vengeance<span>Level 59</span><br />Legendary Axe</h3>
+                    </div><!--flex-->
+
+                    <p>436 Damage per Second</p>
+                    <p>Attack Speed (0.99 sec.)</p>
+                    <p>Physical Damage: 144 - 288</p>
+                    <p>Electric Damage: 144 - 288</p>
+                    <div class="socket">
+                    <img src="css/img/socket_empty.png" height="20px" width="20px">
+                    <p>Empty Socket</p>
+                    </div><!--socket-->
+
+                    <div class="socket">
+                        <img src="css/img/socket_empty.png" height="20px" width="20px">
+                        <p>Empty Socket</p>
+                    </div><!--socket-->
+
+                    <div class="stats">
+                    <p>+Knockback</p>
+                    <p>+12% Attack Speed</p>
+                    <p>-94 to All Armor per hit</p>
+                    <p>35% chance to Stun target for 2 sec.</p>
+                    <p>20% chance to Burn for 5 sec.</p>
+                    </div><!--stats-->
+
+                    <div class="stats_required">
+                        <p>Requires Level: 66</p>
+                        <p>or</p>
+                        <p>Strength 88</p>
+                        <p>Desterity 147</p>
+                    </div><!--stats_required-->
+
+                    <div class="item_detail">
+                        <p>Legendary Canno Collection - Number One of Three</p>
+                    </div>
+                    <div class="button">
+                        <button>Buy</button>
+                    </div><!--button-->
+                </div><!--container_item-->
+
+                <div class="container_item">
+                    <div class="flex">
+                    <img src="css/img/icon_weapon_fist11.png" width="50" height="50">
+                    <h3>Deathsport<span>Level 54</span><br />Legendary Claw</h3>
+                    </div><!--flex-->
+
+                    <p>441 Damage per Second</p>
+                    <p>Attack Speed (0.56 sec.)</p>
+                    <p>Physical Damage: 203 - 291</p>
+                    <div class="socket">
+                    <img src="css/img/socket_empty.png" height="20px" width="20px">
+                    <p>Empty Socket</p>
+                    </div><!--socket-->
+                    
+                    <div class="socket">
+                        <img src="css/img/socket_empty.png" height="20px" width="20px">
+                        <p>Empty Socket</p>
+                    </div><!--socket-->
+
+                    <div class="stats">
+                    <p>Charge rate increased by 20%</p>
+                    <p>610 Physical Damage over 5 sec.</p>
+                    <p>+75% Damage to secundary targets</p>
+                    </div><!--stats-->
+
+                    <div class="stats_required">
+                        <p>Requires Level: 61</p>
+                        <p>or</p>
+                        <p>Strength 81</p>
+                        <p>Desterity 163</p>
+                    </div><!--stats_required-->
+
+                    <div class="item_detail">
+                        <p>Deathsport, unike most claw weapons, does splash damage. Legendary Claw Collection Number One of Five</p>
+                    </div>
+                    <div class="button">
+                        <button>Buy</button>
+                    </div><!--button-->
+                </div><!--container_item-->
+
+                <div class="container_item">
+                    <div class="flex">
+                    <img src="css/img/icon_weapon_fist11.png" width="50" height="50">
+                    <h3>Deathsport<span>Level 54</span><br />Legendary Claw</h3>
+                    </div><!--flex-->
+
+                    <p>441 Damage per Second</p>
+                    <p>Attack Speed (0.56 sec.)</p>
+                    <p>Physical Damage: 203 - 291</p>
+                    <div class="socket">
+                    <img src="css/img/socket_empty.png" height="20px" width="20px">
+                    <p>Empty Socket</p>
+                    </div><!--socket-->
+                    
+                    <div class="socket">
+                        <img src="css/img/socket_empty.png" height="20px" width="20px">
+                        <p>Empty Socket</p>
+                    </div><!--socket-->
+
+                    <div class="stats">
+                    <p>Charge rate increased by 20%</p>
+                    <p>610 Physical Damage over 5 sec.</p>
+                    <p>+75% Damage to secundary targets</p>
+                    </div><!--stats-->
+
+                    <div class="stats_required">
+                        <p>Requires Level: 61</p>
+                        <p>or</p>
+                        <p>Strength 81</p>
+                        <p>Desterity 163</p>
+                    </div><!--stats_required-->
+
+                    <div class="item_detail">
+                        <p>Deathsport, unike most claw weapons, does splash damage. Legendary Claw Collection Number One of Five</p>
+                    </div>
+                    <div class="button">
+                        <button>Buy</button>
+                    </div><!--button-->
+                </div><!--container_item-->
+
+                <div class="container_item">
+                    <div class="flex">
+                    <img src="css/img/icon_weapon_fist11.png" width="50" height="50">
+                    <h3>Deathsport<span>Level 54</span><br />Legendary Claw</h3>
+                    </div><!--flex-->
+
+                    <p>441 Damage per Second</p>
+                    <p>Attack Speed (0.56 sec.)</p>
+                    <p>Physical Damage: 203 - 291</p>
+                    <div class="socket">
+                    <img src="css/img/socket_empty.png" height="20px" width="20px">
+                    <p>Empty Socket</p>
+                    </div><!--socket-->
+                    
+                    <div class="socket">
+                        <img src="css/img/socket_empty.png" height="20px" width="20px">
+                        <p>Empty Socket</p>
+                    </div><!--socket-->
+
+                    <div class="stats">
+                    <p>Charge rate increased by 20%</p>
+                    <p>610 Physical Damage over 5 sec.</p>
+                    <p>+75% Damage to secundary targets</p>
+                    </div><!--stats-->
+
+                    <div class="stats_required">
+                        <p>Requires Level: 61</p>
+                        <p>or</p>
+                        <p>Strength 81</p>
+                        <p>Desterity 163</p>
+                    </div><!--stats_required-->
+
+                    <div class="item_detail">
+                        <p>Deathsport, unike most claw weapons, does splash damage. Legendary Claw Collection Number One of Five</p>
+                    </div>
+                    <div class="button">
+                        <button>Buy</button>
+                    </div><!--button-->
+                </div><!--container_item-->
+
+                <div class="container_item">
+                    <div class="flex">
+                    <img src="css/img/icon_weapon_fist11.png" width="50" height="50">
+                    <h3>Deathsport<span>Level 54</span><br />Legendary Claw</h3>
+                    </div><!--flex-->
+
+                    <p>441 Damage per Second</p>
+                    <p>Attack Speed (0.56 sec.)</p>
+                    <p>Physical Damage: 203 - 291</p>
+                    <div class="socket">
+                    <img src="css/img/socket_empty.png" height="20px" width="20px">
+                    <p>Empty Socket</p>
+                    </div><!--socket-->
+                    
+                    <div class="socket">
+                        <img src="css/img/socket_empty.png" height="20px" width="20px">
+                        <p>Empty Socket</p>
+                    </div><!--socket-->
+
+                    <div class="stats">
+                    <p>Charge rate increased by 20%</p>
+                    <p>610 Physical Damage over 5 sec.</p>
+                    <p>+75% Damage to secundary targets</p>
+                    </div><!--stats-->
+
+                    <div class="stats_required">
+                        <p>Requires Level: 61</p>
+                        <p>or</p>
+                        <p>Strength 81</p>
+                        <p>Desterity 163</p>
+                    </div><!--stats_required-->
+
+                    <div class="item_detail">
+                        <p>Deathsport, unike most claw weapons, does splash damage. Legendary Claw Collection Number One of Five</p>
+                    </div>
+                    <div class="button">
+                        <button>Buy</button>
+                    </div><!--button-->
+                </div><!--container_item-->
+                <div class="container_item">
+                    <div class="flex">
+                    <img src="css/img/icon_weapon_fist11.png" width="50" height="50">
+                    <h3>Deathsport<span>Level 54</span><br />Legendary Claw</h3>
+                    </div><!--flex-->
+
+                    <p>441 Damage per Second</p>
+                    <p>Attack Speed (0.56 sec.)</p>
+                    <p>Physical Damage: 203 - 291</p>
+                    <div class="socket">
+                    <img src="css/img/socket_empty.png" height="20px" width="20px">
+                    <p>Empty Socket</p>
+                    </div><!--socket-->
+                    
+                    <div class="socket">
+                        <img src="css/img/socket_empty.png" height="20px" width="20px">
+                        <p>Empty Socket</p>
+                    </div><!--socket-->
+
+                    <div class="stats">
+                    <p>Charge rate increased by 20%</p>
+                    <p>610 Physical Damage over 5 sec.</p>
+                    <p>+75% Damage to secundary targets</p>
+                    </div><!--stats-->
+
+                    <div class="stats_required">
+                        <p>Requires Level: 61</p>
+                        <p>or</p>
+                        <p>Strength 81</p>
+                        <p>Desterity 163</p>
+                    </div><!--stats_required-->
+
+                    <div class="item_detail">
+                        <p>Deathsport, unike most claw weapons, does splash damage. Legendary Claw Collection Number One of Five</p>
+                    </div>
+                    <div class="button">
+                        <button>Buy</button>
+                    </div><!--button-->
+                </div><!--container_item-->
+                <div class="container_item">
+                    <div class="flex">
+                    <img src="css/img/icon_weapon_fist11.png" width="50" height="50">
+                    <h3>Deathsport<span>Level 54</span><br />Legendary Claw</h3>
+                    </div><!--flex-->
+
+                    <p>441 Damage per Second</p>
+                    <p>Attack Speed (0.56 sec.)</p>
+                    <p>Physical Damage: 203 - 291</p>
+                    <div class="socket">
+                    <img src="css/img/socket_empty.png" height="20px" width="20px">
+                    <p>Empty Socket</p>
+                    </div><!--socket-->
+                    
+                    <div class="socket">
+                        <img src="css/img/socket_empty.png" height="20px" width="20px">
+                        <p>Empty Socket</p>
+                    </div><!--socket-->
+
+                    <div class="stats">
+                    <p>Charge rate increased by 20%</p>
+                    <p>610 Physical Damage over 5 sec.</p>
+                    <p>+75% Damage to secundary targets</p>
+                    </div><!--stats-->
+
+                    <div class="stats_required">
+                        <p>Requires Level: 61</p>
+                        <p>or</p>
+                        <p>Strength 81</p>
+                        <p>Desterity 163</p>
+                    </div><!--stats_required-->
+
+                    <div class="item_detail">
+                        <p>Deathsport, unike most claw weapons, does splash damage. Legendary Claw Collection Number One of Five</p>
+                    </div>
+                    <div class="button">
+                        <button>Buy</button>
+                    </div><!--button-->
+                </div><!--container_item-->
+                <div class="container_item">
+                    <div class="flex">
+                    <img src="css/img/icon_weapon_fist11.png" width="50" height="50">
+                    <h3>Deathsport<span>Level 54</span><br />Legendary Claw</h3>
+                    </div><!--flex-->
+
+                    <p>441 Damage per Second</p>
+                    <p>Attack Speed (0.56 sec.)</p>
+                    <p>Physical Damage: 203 - 291</p>
+                    <div class="socket">
+                    <img src="css/img/socket_empty.png" height="20px" width="20px">
+                    <p>Empty Socket</p>
+                    </div><!--socket-->
+                    
+                    <div class="socket">
+                        <img src="css/img/socket_empty.png" height="20px" width="20px">
+                        <p>Empty Socket</p>
+                    </div><!--socket-->
+
+                    <div class="stats">
+                    <p>Charge rate increased by 20%</p>
+                    <p>610 Physical Damage over 5 sec.</p>
+                    <p>+75% Damage to secundary targets</p>
+                    </div><!--stats-->
+
+                    <div class="stats_required">
+                        <p>Requires Level: 61</p>
+                        <p>or</p>
+                        <p>Strength 81</p>
+                        <p>Desterity 163</p>
+                    </div><!--stats_required-->
+
+                    <div class="item_detail">
+                        <p>Deathsport, unike most claw weapons, does splash damage. Legendary Claw Collection Number One of Five</p>
+                    </div>
+                    <div class="button">
+                        <button>Buy</button>
+                    </div><!--button-->
+                </div><!--container_item-->
+                <div class="container_item">
+                    <div class="flex">
+                    <img src="css/img/icon_weapon_fist11.png" width="50" height="50">
+                    <h3>Deathsport<span>Level 54</span><br />Legendary Claw</h3>
+                    </div><!--flex-->
+
+                    <p>441 Damage per Second</p>
+                    <p>Attack Speed (0.56 sec.)</p>
+                    <p>Physical Damage: 203 - 291</p>
+                    <div class="socket">
+                    <img src="css/img/socket_empty.png" height="20px" width="20px">
+                    <p>Empty Socket</p>
+                    </div><!--socket-->
+                    
+                    <div class="socket">
+                        <img src="css/img/socket_empty.png" height="20px" width="20px">
+                        <p>Empty Socket</p>
+                    </div><!--socket-->
+
+                    <div class="stats">
+                    <p>Charge rate increased by 20%</p>
+                    <p>610 Physical Damage over 5 sec.</p>
+                    <p>+75% Damage to secundary targets</p>
+                    </div><!--stats-->
+
+                    <div class="stats_required">
+                        <p>Requires Level: 61</p>
+                        <p>or</p>
+                        <p>Strength 81</p>
+                        <p>Desterity 163</p>
+                    </div><!--stats_required-->
+
+                    <div class="item_detail">
+                        <p>Deathsport, unike most claw weapons, does splash damage. Legendary Claw Collection Number One of Five</p>
+                    </div>
+                    <div class="button">
+                        <button>Buy</button>
+                    </div><!--button-->
+                </div><!--container_item-->
+                <div class="container_item">
+                    <div class="flex">
+                    <img src="css/img/icon_weapon_fist11.png" width="50" height="50">
+                    <h3>Deathsport<span>Level 54</span><br />Legendary Claw</h3>
+                    </div><!--flex-->
+
+                    <p>441 Damage per Second</p>
+                    <p>Attack Speed (0.56 sec.)</p>
+                    <p>Physical Damage: 203 - 291</p>
+                    <div class="socket">
+                    <img src="css/img/socket_empty.png" height="20px" width="20px">
+                    <p>Empty Socket</p>
+                    </div><!--socket-->
+                    
+                    <div class="socket">
+                        <img src="css/img/socket_empty.png" height="20px" width="20px">
+                        <p>Empty Socket</p>
+                    </div><!--socket-->
+
+                    <div class="stats">
+                    <p>Charge rate increased by 20%</p>
+                    <p>610 Physical Damage over 5 sec.</p>
+                    <p>+75% Damage to secundary targets</p>
+                    </div><!--stats-->
+
+                    <div class="stats_required">
+                        <p>Requires Level: 61</p>
+                        <p>or</p>
+                        <p>Strength 81</p>
+                        <p>Desterity 163</p>
+                    </div><!--stats_required-->
+
+                    <div class="item_detail">
+                        <p>Deathsport, unike most claw weapons, does splash damage. Legendary Claw Collection Number One of Five</p>
+                    </div>
+                    <div class="button">
+                        <button>Buy</button>
+                    </div><!--button-->
+                </div><!--container_item-->
+            </section>
+        </main>
+        </div>
+    </body>
+</html>
